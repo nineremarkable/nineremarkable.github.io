@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>เซเว่นสตาร์อินเตอร์เนชั่นรีสอร์ท</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .lightbox {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 1;
+            width: 60%;
+            height: 80%;
+            background-color: white;
+        }
+        .close {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            color: red;
+            font-size: 4em;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" class="img-responsive logo" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index-ti.html">หน้าหลัก</a>
+                            </li>
+                            <li>
+                                <a href="amenities-ti.html">สิ่งอำนวยความสะดวก</a>
+                            </li>
+                            <li>
+                                <a href="vipservice-ti.html">บริการพิเศษ</a>
+                            </li>
+                            <li>
+                                <a href="floorplan-ti.html">แปลนโครงการ</a>
+                            </li>
+                            <li>
+                                <a href="contact-ti.html">ติดต่อเรา</a>
+                            </li>
+                            <li>
+                                <div class="btn-group" id="choose">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ภาษา
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="./index.html">中文</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index-en.html">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="./index-ti.html">ไทย</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>                   
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <h1>เซเว่นสตาร์อินเตอร์เนชั่นรีสอร์ท</h1>
+                    <div class="col-lg-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="./img/resort/slides/1.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="./img/resort/slides/2.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="./img/resort/slides/3.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="./img/resort/slides/4.jpg">
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <ul class="photo">
+                        <h1>แปลนโครงการ</h1>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (1).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (2).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (3).jpg" alt="">
+                        </li>
+
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (4).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (5).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (6).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (7).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (8).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (9).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (10).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (11).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (12).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (13).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (14).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (15).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (16).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (17).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (18).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (19).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (20).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (21).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (22).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (23).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (24).jpg" alt="">
+                        </li>
+                        <li class="col-lg-4">
+                            <img src="./img/resort/huxing/h (25).jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">ติดต่อเรา</h5>
+                        <address>
+                            <strong>Hi-Tech Inc</strong>
+                            <br> JC Main Road, Near Silnile tower
+                            <br> Pin-21542 NewYork US.</address>
+                        <p>
+                            <i class="icon-phone"></i> 062-027-9999
+                            <br>
+                            <i class="icon-envelope-alt"></i>
+                            <a href="mailto:xiaonan.wang@9remarkable.com" target="_blank">xiaonan.wang@9remarkable.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">ที่อยู่ลิงก์</h5>
+                        <ul class="link-list">
+                            <li>
+                                <a href="amenities-ti.html">สิ่งอำนวยความสะดวก</a>
+                            </li>
+                            <li>
+                                <a href="vipservice-ti.html">บริการพิเศษ</a>
+                            </li>
+                            <li>
+                                <a href="floorplan-ti.html">แปลนโครงการ</a>
+                            </li>
+                            <li>
+                                <a href="contact-ti.html">ติดต่อเรา</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div id="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>
+                                <span>Copyright &copy; SENT
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <a href="#" class="scrollup">
+        <i class="fa fa-angle-up active"></i>
+    </a>
+    <div class="overlay">
+        <div class="close">
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <div class="lightbox">
+            <img src="" class="img-responsive center-block">
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(".photo li img").click(function (event) {
+                var src = $(event.target).attr("src");
+                $(".lightbox img").attr("src", src);
+                $(".overlay").show();
+            })
+            $(".close").click(function () {
+                $(".overlay").hide();
+            })
+        });
+    </script>
+</body>
+
+</html>
